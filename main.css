@@ -25,10 +25,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .header img{
-    width: 50%;
+    width: 60%;
 
 }
 .lists{
@@ -72,11 +72,11 @@
     background-color: aliceblue;
 }
 .notes h3{
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 500;
 }
 .notes h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .button{
     padding: 20px;
@@ -167,9 +167,12 @@
     padding: 21px 20px;
     border-bottom: 3px solid rgb(218, 218, 209);
     text-align: left;
+    font-size: 15px;
+    font-weight: 600;
 }
 .table table th{
     background-color: rgb(222, 228, 222);
+    font-size: 18px;
 }
 .table-cont table{
     width: 100%;
@@ -192,7 +195,6 @@ table td span{
 .table-cont table th{
     background-color: rgb(88, 165, 88);
 }
-
 .button-table{
     padding: 20px;
     visibility: hidden;
@@ -291,20 +293,14 @@ table td span{
 /* ----------All medis queries codes-------- */
 @media screen and (max-width:1090px) {
     .container{
-        /* width: 100%; */
-        /* background-color: yellow; */
         display: grid;
         overflow: visible;
-        column-gap: 3px;
+        column-gap: 1px;
         grid-template-columns: 23% auto 27%;
     }
-    /* .table .table-cont{
-        visibility: hidden;
-     } */
-    
     /* ----------side-nav1-------- */
     .sidenav .header{
-        margin: 0px -60px 20px 10px;
+        margin: 0px 0 0px 10px;
     }
     .header img{
         width: 60%;
@@ -375,7 +371,7 @@ table td span{
     .container{
         /* background-color: red; */
         display: grid;
-        grid-template-columns: 17% auto 28%;
+        grid-template-columns: 19% auto 27%;
     }
     /* ------sidenav1--------- */
     .sidenav .header{
@@ -383,10 +379,16 @@ table td span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: -20px;
     }
-    .header h1{
-        font-size: 16px;
+    .header img{
+        width: 50%;
+        margin-right: 30px;
+    }
+    .notes h3{
+        font-size: 15px;
+    }
+    .notes h1{
+        font-size: 90px;
     }
     .hide{
         visibility: visible;
@@ -422,6 +424,23 @@ table td span{
     .header h1{
         font-size: 15px;
     }
+    .table table td,th{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .notes h3{
+        font-size: 15px;
+    }
+    .notes h1{
+        font-size: 90px;
+    }
+    .table table th{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .notes h1{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:880px){
     .container{
@@ -456,10 +475,10 @@ table td span{
         font-weight: 500;
     }
     .notes h1{
-        font-size: 50px;
+        font-size: 37px;
     }
     .notes h1 img{
-        width: 12%;
+        width: 9%;
     }
     /*------sidena2--------- */
     .sidenav-2{
@@ -478,9 +497,6 @@ table td span{
 
 }
 @media screen and (max-width:750px){
-    /* .container{
-        background-color: rgb(146, 15, 15);
-    } */
     .lists{
         margin: 1px 2px;
     }
@@ -488,7 +504,7 @@ table td span{
         padding: 9px;
     }
     .notes h1{
-        font-size: 37px;
+        font-size: 30px;
     }
     .table table{
         width: 100%;
@@ -516,6 +532,9 @@ table td span{
         display: grid;
         grid-template-columns:  auto ;
         overflow-x: hidden;
+    }
+    .notes h1{
+        font-size: 32px;
     }
     .sidenav {
         position: absolute;
@@ -605,7 +624,7 @@ table td span{
         font-weight: 500;
     }
     .notes h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .notes h1 img{
         width: 12%;
