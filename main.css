@@ -533,8 +533,9 @@ table td span{
 @media screen and (max-width:670px){
     .container{
         display: grid;
+        width: 130%;
         grid-template-columns:  auto ;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .up-side{
         display: flex;
