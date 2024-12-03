@@ -9,12 +9,101 @@
     height: 100%;
     background-color: rgb(218, 218, 209);
 }
+.first-content{
+    margin: 0px 20px ;
+    padding-top: 20px;
+}
+.first-content h3{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.second-content{
+    /* border: 1px solid blue; */
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin: 10px 25px;
+    box-shadow: 2px 0 5px rgb(56, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.notes h3{
+    font-size: 19px;
+    font-weight: 500;
+}
+.notes h1{
+    font-size: 40px;
+}
+.button{
+    padding: 20px;
+}
+.button button{
+    padding: 10px 20px;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(6, 253, 59);
+    cursor: pointer;
+    box-shadow:  inset 2px 0 5px #222e33a2, 0 5px 5px #222e33a2,0 0 9px #222e33a2;
+}
+.popup{
+    width: 400px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 50%;
+    border-radius: 8px;
+    background: rgba(188, 229, 236, 0.849);
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 26px 40px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup .img{
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 120px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(44, 40, 40, 0.2)
+}
+.open-popup{
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1.0);
+}
+.popup h2{
+    font-size: 30px;
+    margin: 10px 0 4px;
+}
+.popup button{
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 30px;
+    background: rgb(204, 13, 13);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.popup h6{
+    font-size: 17px;
+    font-weight: 600;
+}
+
 .third-content{
     padding: 10px 8px;
 }
 .third-content h1{
     padding-bottom: 30px;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 .table table{
     width: 100%;
@@ -68,5 +157,23 @@ table tr td span{
     .table table th{
         font-size: 600;
         font-size: 15px;
+    }
+}
+@media screen and (max-width:550px){
+    .first-content h1{
+        font-size: 30px;
+    }
+    .second-content{
+        padding: 30px 30px;
+    }
+    .notes h3{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .notes h1{
+        font-size: 30px;
+    }
+    .notes h1 img{
+        width: 12%;
     }
 }

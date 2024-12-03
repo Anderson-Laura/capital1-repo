@@ -11,8 +11,11 @@
     grid-template-columns: 20% 55% auto;
     gap: 1px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: rgba(204, 202, 202, 0.842);
+}
+.up-side{
+    display: none;
 }
 /* ----------side-nav1-------- */
 .sidenav{
@@ -533,6 +536,18 @@ table td span{
         grid-template-columns:  auto ;
         overflow-x: hidden;
     }
+    .up-side{
+        display: flex;
+        margin-bottom: -50px;
+    }
+    .up-side img{
+        width: 30%;
+    }
+    /* .up-side h1{
+        font-size: 30px;
+        text-align: left;
+        padding-top: 20px;
+    } */
     .notes h1{
         font-size: 32px;
     }

@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="trans.css">
-    <title>Transaction History</title>
+    <title>Savings Account</title>
 </head>
 <body>
     <div class="container">
+        <div class="first-content">    
+            <h1><span>WELCOME, </span>TAYLOR REBUCK</h1>
+            <h3>Savings Account</h3>
+            <!-- <i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+        </div>
+        <div class="second-content">
+            <div class="notes">
+                <h3><b>Available Balance:</b></h3>
+                <h1><img src="bank-icon-5983.png" alt="bank icon" width="40px"> $600,000.00</h1>
+            </div>
+                <div class="button">
+                    <button type="button" id="button" onclick="openPopup()">Transfer</button>
+                </div>
+            <div class="popup" id="popup">
+                <img src="error.png" alt="thick-mark" class="img">
+                <h2>Declined</h2>
+                <h6>You will have to deposit  before you can make transfer.</h6>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>   
         <div class="third-content">
             <h1>Transaction History</h1>
             <div class="table">
@@ -21,118 +41,36 @@
                     </tr>
                     <tr>
                         <td>Brightpoint inc.</td>
-                        <td>Tax Refund</td>
-                        <td>20-02-2023</td>
-                        <td><span class="green">+$10,700,050</span></td>
+                        <td>Paying Investment</td>
+                        <td>01/03/2024</td>
+                        <td><span class="green">$130,000.00</span></td>
                     </tr>
                     <tr>
-                        <td>Amgen inc</td>
-                        <td>Insurance Paid</td>
-                        <td>25-02-2022</td>
-                        <td><span class="green">+$14,400,305</span></td>
+                        <td>J & J </td>
+                        <td>Health care</td>
+                        <td>12/08/2023</td>
+                        <td><span class="green">$170,000.00</span></td>
                     </tr>
                     <tr>
-                        <td>Elizabeth Mary</td>
-                        <td>Income Tax</td>
-                        <td>30-11-2021</td>
-                        <td class="green">+$1,970,000</td>
+                        <td>Billmart Ltd.</td>
+                        <td>Marting Invest</td>
+                        <td>20/01/2022</td>
+                        <td><span class="green">$80,000.00</span></td>
                     </tr>
                     <tr>
-                        <td>Johnson Tyler</td>
-                        <td>Operating Expenses</td>
-                        <td>10-06-2021</td>
-                        <td class="red">-$5,940,000</td>
+                        <td>Merk & Co.</td>
+                        <td>Health insurance</td>
+                        <td>11/12/2021</td>
+                        <td><span class="green">$120,000.00</span></td>
                     </tr>
                     <tr>
-                        <td>Robbin Gordon</td>
-                        <td>Payroll and Wages</td>
-                        <td>23-11-2020</td>
-                        <td><span>+$5,370,050</span></td>
+                        <td>Devon Energy</td>
+                        <td>Auto-energy investment</td>
+                        <td>26/01/2020</td>
+                        <td><span class="green">$100,000.00</span></td>
                     </tr>
-                    <tr class="hide">
-                        <td>Brightpoint inc.</td>
-                        <td>Property Tax</td>
-                        <td>17-09-2020</td>
-                        <td><span>+$17,760,000</span></td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Brian Koller</td>
-                        <td>Taxes</td>
-                        <td>30-07-2020</td>
-                        <td class="red">-$1,089,000</td>
-                    </tr>
-                    <tr class="hide">
-                        <td>John coke</td>
-                        <td>Net income tax</td>
-                        <td>05-05-2020</td>
-                        <td><span>+$3,900,000</span></td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Brian Koller</td>
-                        <td>License</td>
-                        <td>17-08-2019</td>
-                        <td class="red">-$5,460,090</td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Elizabeth Mary</td>
-                        <td>Product Costs</td>
-                        <td>13-03-2019</td>
-                        <td><span>$2,040,760</span></td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Mary May</td>
-                        <td>Expenses</td>
-                        <td>22-11-2018</td>
-                        <td class="red">-$2,507,400</td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Capra Guy</td>
-                        <td>Current Asset</td>
-                        <td>11-04-2018</td>
-                        <td class="green">+$50,600,050</td>
-                    </tr>
-                    <!-- <tr class="hide">
-                        <td>Brian Coman</td>
-                        <td>Walmart</td>
-                        <td class="green">Credit</td>
-                        <td><span>$2,500.00</span></td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Donald Roger</td>
-                        <td>CashApp</td>
-                        <td class="red">Debit</td>
-                        <td class="red">$1,050.00</td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Marcus Whiteman</td>
-                        <td>Paypal</td>
-                        <td class="red">Debit</td>
-                        <td class="red">$1,200.00</td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Brian Koller</td>
-                        <td>Wells Fago</td>
-                        <td class="green">Credit</td>
-                        <td><span>$10,000.00</span></td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Robert David</td>
-                        <td>CashApp</td>
-                        <td class="red">Debit</td>
-                        <td class="red">$24,600.00</td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Howrad Jerry</td>
-                        <td>Wells Fago</td>
-                        <td class="green">Credit</td>
-                        <td><span>$1,400.00</span></td>
-                    </tr>
-                    <tr class="hide">
-                        <td>Jackie Larry</td>
-                        <td>CashApp</td>
-                        <td class="red">Debit</td>
-                        <td class="red">$900.00</td>
-                    </tr> -->
+                   
+                   
                 </table>
              </div>
             <div class="btn">
@@ -141,5 +79,20 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <script>
+
+       // ---------Popups----------
+       let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
 </body>
 </html>
