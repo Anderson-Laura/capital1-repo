@@ -75,11 +75,19 @@
     background-color: aliceblue;
 }
 .notes h3{
-    font-size: 19px;
+    font-size: 27px;
     font-weight: 500;
 }
 .notes h1{
     font-size: 40px;
+}
+.notes p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.notes p span{
+    font-size: 23px;
+    font-weight: 500;
 }
 .button{
     padding: 20px;
@@ -535,22 +543,18 @@ table td span{
         display: grid;
         width: 130%;
         grid-template-columns:  auto ;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .up-side{
         display: flex;
-        margin-bottom: -50px;
+        margin-bottom: 10px;
     }
     .up-side img{
         width: 30%;
     }
-    /* .up-side h1{
-        font-size: 30px;
-        text-align: left;
-        padding-top: 20px;
-    } */
-    .notes h1{
-        font-size: 32px;
+   
+    .notes h3{
+        font-size: 28px;
     }
     .sidenav {
         position: absolute;
@@ -570,6 +574,8 @@ table td span{
     }
     .sidenav .header img{
         width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .sidenav .lists{
         margin-top: -10px;
@@ -624,6 +630,7 @@ table td span{
     }
     .sidenav .header img{
         width: 50%;
+        margin-top: 10px;
     }
     .sidenav .lists{
         margin-top: -10px;
@@ -639,8 +646,11 @@ table td span{
         font-size: 15px;
         font-weight: 500;
     }
-    .notes h1{
-        font-size: 30px;
+    .notes h3{
+        font-size: 22px;
+    }
+    .notes p span{
+        font-size: 22px;
     }
     .notes h1 img{
         width: 12%;
