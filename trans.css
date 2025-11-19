@@ -28,7 +28,7 @@
     background-color: aliceblue;
 }
 .notes h3{
-    font-size: 19px;
+    font-size: 30px;
     font-weight: 500;
 }
 .notes h1{
@@ -167,7 +167,7 @@ table tr td span{
         padding: 30px 30px;
     }
     .notes h3{
-        font-size: 15px;
+        font-size: 25px;
         font-weight: 500;
     }
     .notes h1{
