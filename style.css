@@ -14,7 +14,7 @@
 .header{
     width: 100%;
     height: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     display: flex;
     padding-top: 30px;
     align-items: center;
@@ -59,7 +59,7 @@
     transition: 2s all ease;
 }
 .fa{
-    font-size: 25px;
+    font-size: 20px;
 }
  
 .form-in form button:hover{
