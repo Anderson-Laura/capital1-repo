@@ -301,7 +301,7 @@ table td span{
 .red{
     color: red;
 }
-/* ----------All medis queries codes-------- */
+/* ----------All medias queries codes-------- */
 @media screen and (max-width:1090px) {
     .container{
         display: grid;
